@@ -111,29 +111,15 @@
 </script>
 
 <!-- ═══════════════════════════════════════════════════
-     GOOGLE TAG MANAGER
-     Substitua GTM-XXXXXXX pelo seu ID real no GTM
-     ═══════════════════════════════════════════════════ -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-<!-- End Google Tag Manager -->
-
-<!-- ═══════════════════════════════════════════════════
      GOOGLE ANALYTICS 4
-     Substitua G-XXXXXXXXXX pelo seu Measurement ID real
-     (opcional: via GTM é preferível — use um dos dois)
+     ID real da propriedade VisualCalc Site
      ═══════════════════════════════════════════════════ -->
-<!-- Google Analytics 4 (fallback direto) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KS0YS5VY6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX', {
+  gtag('config', 'G-4KS0YS5VY6', {
     'send_page_view': true,
     'cookie_flags': 'SameSite=None;Secure'
   });
@@ -694,10 +680,6 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
 </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 
 <!-- STICKY CTA BAR -->
@@ -2006,7 +1988,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
 
 <!-- ═══════════════════════════════════════════════════
      RASTREAMENTO DE CONVERSÕES — VisualCalc ERP
-     Eventos GA4 via dataLayer (GTM coleta automaticamente)
+     Eventos GA4 via gtag/dataLayer
      ═══════════════════════════════════════════════════ -->
 <script>
 // ─── Helpers ───────────────────────────────────────────────
