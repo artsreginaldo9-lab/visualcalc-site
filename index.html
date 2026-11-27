@@ -584,6 +584,14 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
 .eng-card-title{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;color:var(--text);margin-bottom:8px}
 .eng-card-desc{font-size:13px;color:var(--text3);line-height:1.6;margin-bottom:14px}
 .eng-card-params{display:flex;flex-wrap:wrap;gap:6px}
+.tag-novo{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:99px;background:rgba(46,212,122,.12);color:var(--green);font-size:10px;font-weight:700;letter-spacing:.04em;vertical-align:middle;text-transform:uppercase}
+.breve-box{margin-top:44px;border:1px dashed rgba(56,197,224,.35);border-radius:var(--r-xl);padding:28px;background:rgba(56,197,224,.04)}
+.breve-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.breve-title{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:var(--text)}
+.breve-tag{padding:4px 12px;border-radius:99px;background:rgba(56,197,224,.12);color:var(--cyan);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.breve-sub{font-size:14px;color:var(--text2);line-height:1.6;max-width:760px}
+.breve-cta{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:12px 20px;border-radius:var(--r);background:var(--cyan);color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}
+.breve-cta:hover{filter:brightness(1.08)}
 .eng-param{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.15);color:var(--purple)}
 .eng-demo{background:var(--ink3);border:1px solid var(--line2);border-radius:var(--r-xl);padding:22px;margin-top:52px}
 .eng-demo-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
@@ -1200,7 +1208,7 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
     <div class="fade-up text-center">
       <div class="eyebrow eyebrow-purple">Exclusivo VisualCalc</div>
       <h2 class="section-title">Simuladores de<br><span style="color:var(--purple)">Engenharia Industrial</span></h2>
-      <p class="section-sub" style="margin:0 auto">Diferencial que nenhum ERP genérico tem. Simuladores técnicos que calculam até o desperdício de corte, consumo de LED por metro, estresse de estrutura e otimização de materiais.</p>
+      <p class="section-sub" style="margin:0 auto">Diferencial que nenhum ERP genérico tem. Simuladores técnicos que calculam até o desperdício de corte, consumo de LED por metro, estresse de estrutura — e agora encaixam as peças pelo formato real para gastar menos chapa.</p>
     </div>
 
     <div class="eng-grid">
@@ -1219,7 +1227,7 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
       <div class="eng-card fade-up" style="--ec1:var(--red);--ec2:var(--orange);transition-delay:.16s">
         <span class="eng-card-icon">⚡</span>
         <div class="eng-card-title">Simulador Laser & CNC</div>
-        <div class="eng-card-desc">Tempo de corte por hora-máquina, consumo de gás/energia, setup, quantidade de peças e nesting automático em chapa. Custo real de operação.</div>
+        <div class="eng-card-desc">Tempo de corte pelo contorno real do desenho (SVG/DXF), furos e entradas, setup, troca de chapa e nesting automático. Custo real de operação e plano de corte em PDF.</div>
         <div class="eng-card-params"><span class="eng-param">Hora máquina</span><span class="eng-param">Velocidade</span><span class="eng-param">Nesting</span><span class="eng-param">Setup</span></div>
       </div>
       <div class="eng-card fade-up" style="--ec1:var(--purple);--ec2:#a78bfa;transition-delay:.24s">
@@ -1239,6 +1247,39 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
         <div class="eng-card-title">Totem & Sinalização</div>
         <div class="eng-card-desc">Cálculo estrutural de totens, colunas, bases, fixações e sinalização vertical. Valida resistência ao vento e define dimensões da estrutura de suporte.</div>
         <div class="eng-card-params"><span class="eng-param">Altura</span><span class="eng-param">Carga vento</span><span class="eng-param">Base</span><span class="eng-param">Âncora</span></div>
+      </div>
+      <div class="eng-card fade-up" style="--ec1:var(--green);--ec2:var(--cyan)">
+        <span class="eng-card-icon">🧩</span>
+        <div class="eng-card-title">Encaixe Inteligente<span class="tag-novo">Novo</span></div>
+        <div class="eng-card-desc">No Laser e no Router, as peças são encaixadas pelo formato real do desenho: letras se encaixam umas nas outras e as pequenas aproveitam o miolo das grandes. Compara com o encaixe comum e nunca fica pior.</div>
+        <div class="eng-card-params"><span class="eng-param">Formato real</span><span class="eng-param">Menos chapas</span><span class="eng-param">DXF / SVG</span><span class="eng-param">Miolo das letras</span></div>
+      </div>
+      <div class="eng-card fade-up" style="--ec1:var(--gold);--ec2:var(--cyan);transition-delay:.08s">
+        <span class="eng-card-icon">🧊</span>
+        <div class="eng-card-title">ACM 3D, Curvo e Bandejas<span class="tag-novo">Novo</span></div>
+        <div class="eng-card-desc">Além da fachada reta: caixas e volumes em 3D, fachadas curvas e bandejas com dobra. O sistema calcula as chapas, as dobras, a estrutura e o aproveitamento.</div>
+        <div class="eng-card-params"><span class="eng-param">Volumes 3D</span><span class="eng-param">Fachada curva</span><span class="eng-param">Bandejas</span><span class="eng-param">Dobras</span></div>
+      </div>
+      <div class="eng-card fade-up" style="--ec1:var(--purple);--ec2:var(--cyan);transition-delay:.16s">
+        <span class="eng-card-icon">📐</span>
+        <div class="eng-card-title">CNC: Planificação + DXF<span class="tag-novo">Novo</span></div>
+        <div class="eng-card-desc">Informe a peça pronta (caixa, prisma, pirâmide, cilindro) e o sistema planifica, marca as dobras e entrega o DXF pronto para a máquina cortar.</div>
+        <div class="eng-card-params"><span class="eng-param">Caixa</span><span class="eng-param">Cilindro</span><span class="eng-param">Frisos</span><span class="eng-param">DXF pronto</span></div>
+      </div>
+    </div>
+
+    <div class="eng-features fade-up" style="margin-top:20px">
+      <div class="eng-feat">
+        <div class="eng-feat-title">💲 Preços da sua gráfica</div>
+        <div class="eng-feat-desc">Todos os simuladores usam o custo real que você cadastrou (materiais, insumos, mão de obra e máquinas) e avisam item a item o que ainda falta cadastrar.</div>
+      </div>
+      <div class="eng-feat">
+        <div class="eng-feat-title">♻️ Retalhos aproveitados</div>
+        <div class="eng-feat-desc">A sobra da chapa ou do rolo vira retalho guardado. No próximo serviço, o simulador oferece o retalho antes de abrir material novo.</div>
+      </div>
+      <div class="eng-feat">
+        <div class="eng-feat-title">🗂️ Plano de corte no pedido</div>
+        <div class="eng-feat-desc">O plano de corte em PDF (e o DXF/SVG no encaixe inteligente) vai junto com o pedido para a produção. Ninguém corta pelo desenho errado.</div>
       </div>
     </div>
 
@@ -1335,6 +1376,21 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
       <div class="pcp-feat"><span class="pcp-feat-icon">📋</span><div class="pcp-feat-title">Histórico de Produção</div><div class="pcp-feat-desc">Registro de cada etapa: quem fez, quando concluiu, tempo médio por serviço.</div></div>
       <div class="pcp-feat"><span class="pcp-feat-icon">💼</span><div class="pcp-feat-title">Controle de Comissões</div><div class="pcp-feat-desc">Comissões calculadas automaticamente por pedido e liberadas após entrega confirmada.</div></div>
       <div class="pcp-feat"><span class="pcp-feat-icon">📱</span><div class="pcp-feat-title">Acompanhamento Mobile</div><div class="pcp-feat-desc">Veja sua produção em tempo real pelo celular, de qualquer lugar.</div></div>
+    </div>
+
+    <div class="breve-box fade-up">
+      <div class="breve-head">
+        <div class="breve-title">🏭 PCP Industrial</div>
+        <span class="breve-tag">Em breve</span>
+      </div>
+      <p class="breve-sub">Para gráficas com várias máquinas e equipe na produção: o sistema monta a ordem de produção, mostra o prazo real de cada pedido e a equipe aponta o trabalho pelo celular. Já em uso na gráfica onde o VisualCalc nasceu — em breve liberado para todos.</p>
+      <div class="pcp-features" style="margin-top:20px">
+        <div class="pcp-feat"><span class="pcp-feat-icon">🧾</span><div class="pcp-feat-title">Ordem de Produção</div><div class="pcp-feat-desc">Etapas, máquinas, tempos e aproveitamento do material montados a partir do pedido.</div></div>
+        <div class="pcp-feat"><span class="pcp-feat-icon">📲</span><div class="pcp-feat-title">Chão de fábrica com QR</div><div class="pcp-feat-desc">O operador lê o QR da ficha e aponta início, pausa e fim pelo celular, com PIN próprio.</div></div>
+        <div class="pcp-feat"><span class="pcp-feat-icon">📺</span><div class="pcp-feat-title">Painel ao vivo na TV</div><div class="pcp-feat-desc">O que está em cada máquina, o que vem a seguir e o que está atrasado, numa tela da produção.</div></div>
+        <div class="pcp-feat"><span class="pcp-feat-icon">🗓️</span><div class="pcp-feat-title">Agenda com prazo real</div><div class="pcp-feat-desc">A fila de cada máquina com os turnos da empresa diz quando cada pedido fica pronto.</div></div>
+      </div>
+      <a href="https://wa.me/5511973378938?text=Ol%C3%A1!%20Quero%20ser%20avisado%20quando%20o%20PCP%20Industrial%20do%20VisualCalc%20for%20liberado." target="_blank" rel="noopener" class="breve-cta">🔔 Quero ser avisado quando liberar</a>
     </div>
   </div>
 </section>
@@ -1819,6 +1875,16 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
         <div class="cv-niche-title">Financeiro com DRE</div>
         <div class="cv-niche-desc">Entradas, saídas, contas a receber e a pagar. Saiba o lucro real de cada serviço, não o chute.</div>
       </div>
+      <div class="cv-niche fade-up" style="--ncol:var(--green);transition-delay:.36s">
+        <span class="cv-niche-icon">📈</span>
+        <div class="cv-niche-title">Marketing com resultado</div>
+        <div class="cv-niche-desc">Saiba de onde vem cada cliente (Google, Instagram, WhatsApp, loja, blog), quanto custou cada contato e o retorno dos anúncios no Google Ads e na Meta.</div>
+      </div>
+      <div class="cv-niche fade-up" style="--ncol:var(--cyan);transition-delay:.42s">
+        <span class="cv-niche-icon">🎓</span>
+        <div class="cv-niche-title">Central de Ajuda com vídeos</div>
+        <div class="cv-niche-desc">Guias passo a passo e vídeos dentro do sistema. Em cada tela, o botão "Ajuda desta tela" mostra como usar aquela parte.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1949,6 +2015,9 @@ footer{border-top:1px solid var(--line);padding:52px 0;background:var(--ink2)}
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Tem suporte? Como funciona? <span class="faq-icon">+</span></div><div class="faq-a">Sim. Suporte via WhatsApp diretamente com a equipe que desenvolveu o sistema. Sem robô, sem fila. Respondemos em minutos. Atendimento de segunda a sábado, das 8h às 18h.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">O sistema funciona para serralherias? <span class="faq-icon">+</span></div><div class="faq-a">Sim. O VisualCalc atende gráficas, comunicação visual, ACM, fachadas, adesivos, impressão digital, plotagem e serralherias. Qualquer negócio que trabalha com orçamentos por m², dimensões ou produtos personalizados encontra valor no sistema.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Integra com o Mercado Livre? <span class="faq-icon">+</span></div><div class="faq-a">Sim. Você conecta a conta de vendedor e publica os produtos direto do sistema, com fotos, vídeo, ficha técnica, todas as opções de tamanho e preço de atacado. O preço já sai calculado com a comissão. Quando vende, o pedido entra sozinho na fila de produção, o sistema pede a arte ao comprador e a etiqueta de envio sai em PDF.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">O sistema economiza chapa no corte a laser e no router? <span class="faq-icon">+</span></div><div class="faq-a">Sim. Importe o desenho em SVG ou DXF e escolha o Encaixe Inteligente: as peças são encaixadas pelo formato real (letras, logos, peças recortadas), as pequenas entram no miolo das grandes e o sistema compara com o encaixe comum, mostrando quantas chapas você economiza. Se o encaixe comum já for o melhor, ele é usado. O plano sai em PDF, DXF e SVG.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">O preço sai com o meu custo ou com preço de tabela? <span class="faq-icon">+</span></div><div class="faq-a">Com o seu custo. Você cadastra materiais, insumos, mão de obra e máquinas uma vez e todos os simuladores passam a usar esses valores. Quando falta algum cadastro, o sistema avisa item a item e mostra de onde veio cada preço.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">E se eu tiver dúvida de como usar? <span class="faq-icon">+</span></div><div class="faq-a">Dentro do sistema há uma Central de Ajuda com guias passo a passo e vídeos, e em cada tela o botão "Ajuda desta tela". E o suporte pelo WhatsApp é com a própria equipe que desenvolveu o sistema.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Posso ter múltiplos usuários? <span class="faq-icon">+</span></div><div class="faq-a">Sim. O plano Básico tem 1 usuário, o Profissional tem 3 usuários e o Avançado tem usuários ilimitados. Cada usuário tem acesso com login próprio e você pode definir permissões por perfil.</div></div>
     </div>
   </div>
